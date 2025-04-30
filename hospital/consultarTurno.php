@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         if ($resultado->num_rows > 0) {
             $paciente = $resultado->fetch_assoc();
+            
             // Obtener los turnos del paciente
             $sql = "SELECT t.id, t.tipo_turno, t.horario FROM turnos t WHERE t.paciente_id = ? ORDER BY t.horario";
             $stmt = $conn->prepare($sql);
