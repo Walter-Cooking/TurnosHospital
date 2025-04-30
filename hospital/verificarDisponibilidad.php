@@ -1,6 +1,6 @@
 <?php
 // Incluir archivo de configuración de base de datos
-include 'config/db.php';
+include 'php/db.php';
 
 // Configurar encabezados para JSON
 header('Content-Type: application/json');

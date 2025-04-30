@@ -19,7 +19,7 @@
                 <li><a href="contacto.php">Contacto</a></li>
             </ul>
             <ul class="nav-right">
-                <?php if (isset($_SESSION['usuario'])): ?>
+                <?php if (isset($_SESSION['nombre'])): ?>
                     <li><a href="logout.php">Cerrar Sesión</a></li>
                 <?php else: ?>
                     <li><a href="login.php">Iniciar Sesión</a></li>

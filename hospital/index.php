@@ -4,7 +4,7 @@
     <h2>Bienvenido al Sistema de Gestión de Turnos del Hospital</h2>
     
     <div class="welcome-content">
-        <p>Nuestro sistema le permite gestionar sus turnos médicos de manera rápida y eficiente, sin necesidad de acercarse físicamente al hospital.</p>
+        <h4>Nuestro sistema le permite gestionar sus turnos médicos de manera rápida y eficiente, sin necesidad de acercarse físicamente al hospital.</h4>
 
         <div class="options-container">
             <div class="option-card">

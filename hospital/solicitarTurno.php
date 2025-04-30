@@ -1,4 +1,11 @@
-<?php include 'header.php'; ?>
+<?php
+session_start();
+if (!isset($_SESSION['nombre'])) {
+    header("Location: login.php");
+    exit();
+}
+include 'header.php';
+?>
 
 <div class="container">
     <h2>Solicitar un Nuevo Turno</h2>

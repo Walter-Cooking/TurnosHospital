@@ -15,7 +15,7 @@ if ($user = $result->fetch_assoc()) {
     if (password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['nombre'] = $user['nombre'];
-        header("Location: ../index.php");
+        header("Location: index.php");
     } else {
         echo "Contraseña incorrecta";
     }
