@@ -16,10 +16,13 @@ if ($user = $result->fetch_assoc()) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['nombre'] = $user['nombre'];
         header("Location: index.php");
+        exit();
     } else {
-        echo "Contraseña incorrecta";
+        header("Location: login.php?error=clave");
+        exit();
     }
 } else {
-    echo "Usuario no encontrado";
+    header("Location: login.php?error=usuario");
+    exit();
 }
 ?>
